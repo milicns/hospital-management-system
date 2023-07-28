@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package rs.ac.uns.ftn.grpc;
+option csharp_namespace = "IntegrationLibrary.Protos";
+
+message DonationAppointment{
+  string patientName = 1;
+  string patientSurname = 2;
+  string patientEmail = 3;
+  int32 termId = 4;
+  string patientBloodType = 5;
+}
+
+message DonationAppointmentResponse{
+  string response = 1;
+  string status = 2;
+}
+
+
+
+

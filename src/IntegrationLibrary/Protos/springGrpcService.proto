@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package rs.ac.uns.ftn.grpc;
+option csharp_namespace = "IntegrationLibrary.Protos";
+import "Protos/model.proto";
+
+service SpringGrpcService {
+  rpc communicate (DonationAppointment) returns (DonationAppointmentResponse);
+}
